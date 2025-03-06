@@ -8,7 +8,7 @@
 
 <p align="center">
   Viem Extension for OP Stack Chains
-<p>
+</p>
 
 <br>
 
