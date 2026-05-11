@@ -18,6 +18,7 @@ export type {
 export { type OpStackL2ChainContracts, opStackL2ChainContracts, OpStackL2Contract } from './types/opStackContracts.js'
 export type { MessagePassedEvent } from './types/withdrawal.js'
 export type { WithdrawETHParameters, WithdrawToParameters } from './types/withdrawTo.js'
+export { applyL1ToL2Alias, L1_TO_L2_ALIAS_OFFSET, undoL1ToL2Alias } from './utils/addressAlias.js'
 export type { GetDepositTransactionParams } from './utils/getDepositTransaction.js'
 export { getDepositTransaction } from './utils/getDepositTransaction.js'
 export { getL2HashFromL1DepositInfo } from './utils/getL2HashFromL1DepositInfo.js'
