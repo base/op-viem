@@ -1,3 +1,4 @@
+export { applyL1ToL2Alias, L1_TO_L2_ALIAS_OFFSET, undoL1ToL2Alias } from './addressAlias.js'
 export { parseOpaqueData } from './getArgsFromTransactionDepositedOpaqueData.js'
 export type { GetDepositTransactionParams } from './getDepositTransaction.js'
 export { getDepositTransaction } from './getDepositTransaction.js'
