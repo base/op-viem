@@ -1,23 +1,62 @@
+// ============================================================
+// Public Actions
+// ============================================================
 export { type ProvenWithdrawal } from './actions/public/L1/readProvenWithdrawals.js'
+
+// ============================================================
+// Wallet Actions
+// ============================================================
 export { type ProveWithdrawalTransactionParameters } from './actions/wallet/L1/writeProveWithdrawalTransaction.js'
+
+// ============================================================
+// Public Decorators
+// ============================================================
 export { type PublicL1OpStackActions, publicL1OpStackActions } from './decorators/publicL1OpStackActions.js'
 export { type PublicL2OpStackActions, publicL2OpStackActions } from './decorators/publicL2OpStackActions.js'
+
+// ============================================================
+// Wallet Decorators
+// ============================================================
 export { type WalletL1OpStackActions, walletL1OpStackActions } from './decorators/walletL1OpStackActions.js'
 export { type WalletL2OpStackActions, walletL2OpStackActions } from './decorators/walletL2OpStackActions.js'
+
+// ============================================================
+// Types - Addresses
+// ============================================================
 export type { Addresses, ContractAddress, RawOrContractAddress } from './types/addresses.js'
+
+// ============================================================
+// Types - Deposit Transactions
+// ============================================================
 export type { DepositERC20Parameters } from './types/depositERC20.js'
 export type { DepositETHParameters } from './types/depositETH.js'
 export type { DepositTransaction, TransactionDepositedEvent } from './types/depositTransaction.js'
 export { DEPOSIT_TX_PREFIX, SourceHashDomain } from './types/depositTransaction.js'
+
+// ============================================================
+// Types - Gas Price Oracle
+// ============================================================
 export type {
   BlockOptions,
   GasPriceOracleEstimator,
   GasPriceOracleParameters,
   OracleTransactionParameters,
 } from './types/gasPriceOracle.js'
+
+// ============================================================
+// Types - OP Stack Contracts
+// ============================================================
 export { type OpStackL2ChainContracts, opStackL2ChainContracts, OpStackL2Contract } from './types/opStackContracts.js'
+
+// ============================================================
+// Types - Withdrawals
+// ============================================================
 export type { MessagePassedEvent } from './types/withdrawal.js'
 export type { WithdrawETHParameters, WithdrawToParameters } from './types/withdrawTo.js'
+
+// ============================================================
+// Utilities - Deposit Transactions
+// ============================================================
 export type { GetDepositTransactionParams } from './utils/getDepositTransaction.js'
 export { getDepositTransaction } from './utils/getDepositTransaction.js'
 export { getL2HashFromL1DepositInfo } from './utils/getL2HashFromL1DepositInfo.js'
@@ -28,5 +67,13 @@ export type {
   TransactionDepositedEventDetails,
 } from './utils/getTransactionDepositedEvents.js'
 export { getTransactionDepositedEvents } from './utils/getTransactionDepositedEvents.js'
+
+// ============================================================
+// Utilities - Withdrawals
+// ============================================================
 export { getWithdrawalMessageStorageSlot } from './utils/getWithdrawalMessageStorageSlot.js'
+
+// ============================================================
+// Utilities - Encoding
+// ============================================================
 export { rlpEncodeDepositTransaction } from './utils/rlpEncodeDepositTransaction.js'
